@@ -1,4 +1,3 @@
-<!-- admin.html ou modo.html -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -9,21 +8,28 @@
 </head>
 <body>
     <header>
-        <h1>Page Admin ou Modérateur</h1>
+        <div class="logo">
+            <h1>Page Admin</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="modo.html">Page Modérateur</a></li>
+                <li><a href="change-password.html">Changer le mot de passe</a></li>
+            </ul>
+        </nav>
     </header>
+
     <main>
-        <!-- Espace d'envoi de fichiers -->
-        <h2>Envoyer des fichiers</h2>
-        <input type="file" id="fileUpload">
-        <button id="uploadButton">Envoyer le fichier</button>
-
-        <!-- Section des commandes -->
-        <h2>Exécuter une commande</h2>
-        <input type="text" id="commandInput" placeholder="Entrez une commande">
-        <button id="executeCommandButton">Exécuter</button>
-
-        <div id="commandOutput"></div>
+        <div class="card">
+            <h3>Gérer les utilisateurs</h3>
+            <p>Accédez aux paramètres des utilisateurs et gérez leurs permissions.</p>
+            <button onclick="window.location.href='admin.html'">Accéder</button>
+        </div>
     </main>
-    <script src="assets/js/admin.js"></script>
+
+    <footer>
+        <p>&copy; 2024 Mon Site Admin. Tous droits réservés.</p>
+    </footer>
 </body>
 </html>

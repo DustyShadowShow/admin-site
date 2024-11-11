@@ -8,15 +8,28 @@
 </head>
 <body>
     <header>
-        <h1>Bienvenue sur la page des Modérateurs</h1>
+        <div class="logo">
+            <h1>Page Modérateur</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="admin.html">Page Admin</a></li>
+                <li><a href="change-password.html">Changer le mot de passe</a></li>
+            </ul>
+        </nav>
     </header>
+
     <main>
-        <p>Vous êtes connecté en tant que Modérateur.</p>
-        
-        <!-- Lien pour changer le mot de passe -->
-        <a href="change-password.html">Changer le mot de passe</a>
-        
-        <!-- Autres contenus de la page modo -->
+        <div class="card">
+            <h3>Modérer le contenu</h3>
+            <p>Modérez le contenu des utilisateurs et gérez les interactions.</p>
+            <button onclick="window.location.href='modo.html'">Accéder</button>
+        </div>
     </main>
+
+    <footer>
+        <p>&copy; 2024 Mon Site Admin. Tous droits réservés.</p>
+    </footer>
 </body>
 </html>
