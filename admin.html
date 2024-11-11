@@ -1,3 +1,4 @@
+<!-- admin.html ou modo.html -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -8,15 +9,21 @@
 </head>
 <body>
     <header>
-        <h1>Bienvenue sur la page des Admins</h1>
+        <h1>Page Admin ou Modérateur</h1>
     </header>
     <main>
-        <p>Vous êtes connecté en tant qu'Admin.</p>
-        
-        <!-- Lien pour changer le mot de passe -->
-        <a href="change-password.html">Changer le mot de passe</a>
-        
-        <!-- Autres contenus de la page admin -->
+        <!-- Espace d'envoi de fichiers -->
+        <h2>Envoyer des fichiers</h2>
+        <input type="file" id="fileUpload">
+        <button id="uploadButton">Envoyer le fichier</button>
+
+        <!-- Section des commandes -->
+        <h2>Exécuter une commande</h2>
+        <input type="text" id="commandInput" placeholder="Entrez une commande">
+        <button id="executeCommandButton">Exécuter</button>
+
+        <div id="commandOutput"></div>
     </main>
+    <script src="assets/js/admin.js"></script>
 </body>
 </html>
